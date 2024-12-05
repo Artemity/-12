@@ -13,8 +13,13 @@
             <RowDefinition Height="68*"/>
         </Grid.RowDefinitions>
         <Menu VerticalAlignment="Top" Height="18" Background="LemonChiffon">
-            <MenuItem Header="О программе" ToolTip="О программе" Click="btnInfo_Click"></MenuItem>
-            <MenuItem Header="Выход" ToolTip="Выход" Click="btnExit_Click"></MenuItem>
+            <MenuItem Header="Файл" ToolTip="О программе">
+                <MenuItem Header="О программе" ToolTip="О программе" Click="btnInfo_Click"></MenuItem>
+                <MenuItem Header="Выход" ToolTip="Выход" Click="btnExit_Click"></MenuItem>
+                <Separator/>
+                <MenuItem Header="Рассчитать" Click="btnTask2_Click"/>
+                <MenuItem Header="Очистить" Click="btnClear2_Click"></MenuItem>
+            </MenuItem>
         </Menu>
         <TabControl x:Name="pages" Margin="0,2,0,6" Grid.Row="1">
             <TabItem>
